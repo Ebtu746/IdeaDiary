@@ -1,0 +1,112 @@
+/*  HEADER STYLE  */
+.header {
+  background-color: #ffffff; 
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header .icon {
+  font-size: 2rem;
+}
+
+.header .proj {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.header .description {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+#but-new .btn {
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+#but-new .btn:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .header .container {
+    display:flex;
+    flex-direction: column; 
+  }
+
+  #but-new {
+    margin-top: 3px;
+  }
+}
+/* container for adding new idea */
+.labeles{
+  font-weight: 500;
+}
+
+/* when new idea button is clicked */
+.glow-blue{
+  box-shadow: 0 0 25px 8px #007bff; 
+  border-color: #007bff !important;  
+  transition: box-shadow 0.8s ease, border-color 0.8s ease;
+}
+
+/* style for the arrow */
+.toggle-arrow {
+  border: none;
+  background: none;
+  font-size: 1 rem;
+  cursor: pointer;
+}
+
+.toggle-arrow:hover {
+  color: #007bff;
+}
+
+/* style for list of ideas */
+.area-store {
+  overflow-y: auto;
+  transition: max-height 0.5s ease;
+  max-height: 500px; /* default expanded height */
+}
+
+.area-store.collapsed {
+  max-height: 0;
+  overflow: hidden;
+}
+.store{
+  max-height: 150px;
+}
+
+
+/* Image and the text */
+.idea-background {
+  background-image: url("../images/image.png"); /* replace with your image path */
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 370px;     
+  position: relative;
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;    
+  font-size: 1.8rem;           
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* makes text readable */
+}
+.collapsed {
+  display: none;
+}
+
+
+
+
+

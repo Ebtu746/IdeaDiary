@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Diary</title>
+    <link rel="shortcut icon"  sizes="32x32" href="./images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- ==== headeer of the page ==== -->
+<header class="header py-3 shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+    <div class="d-flex align-items-center mb-2 mb-sm-0">
+      <div class="icon mr-2">💡</div>
+      <div>
+        <h5 class="proj mb-0">Idea Diary</h5>
+        <p class="description mb-0 small text-muted">Collect ideas that solve daily problems</p>
+      </div>
+    </div>
+
+    <!--  new button -->
+    <div class="" id="but-new">
+      <button class="btn btn-outline-primary btn-sm" id="new-idea-btn">New Idea</button>
+    </div>
+  </div>
+</header>
+<!-- ====container for new idea===== -->
+<div class="container">
+<div class="row">
+
+<!-- Image -->
+<div class="col-md-4 idea-background">
+  <div class="overlay-text">
+    Light up the world with your ideas
+  </div>
+</div>
+<!--==== container for adding new idea ===== -->
+<div class="col-md-8">
+<div class="add-idea my-4 border rounded shadow-sm p-3" id="add-idea-box">
+  <h5 class=" text-center font-weight-bold">Add your new idea here</h5>
+    <form id="idea-form">
+      <div class="idea-title mb-3 ">
+          <label class="mb-1 labeles" for="idea-title">Title</label>
+          <input id="idea-title" class="form-control" type="text" placeholder="Short title for your idea">
+      </div>
+
+      <div class="idea-description mb-3">
+        <label class="mb-1 labeles" for="idea-desc">Description</label>
+        <textarea id="idea-desc" class="form-control" rows="4" placeholder="Describe the problem and your solution idea..."></textarea>
+      </div>
+      
+      <div class="row align-items-end mb-3 ">
+        <div class="category col">
+          <label class="mb-1 labeles" for="category">Category</label>
+          <select id="category" class="form-control custom-select">
+            <option value=""> Select Category</option>
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="technology">Technology</option>
+            <option value="environment">Environment</option>
+          </select>
+        </div>
+
+        <div class="col-auto" id="add-but">
+          <button type="submit" class="btn btn-primary ">Add Idea</button>
+        </div>
+      </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+<!--===== Idea collections container ==== -->
+<div class="container my-4">
+  <div class="ideas-list  border rounded shadow-sm py-3" id="ideas-container">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 class="font-weight-bold mb-0 ml-5">💡 Idea Collection</h5>
+      <button class="btn btn-sm btn-light toggle-arrow mr-4"  id="toggle-ideas">
+        <span class="arrow-icon">▼</span>
+      </button>
+    </div>
+      <div id="ideas-content" class="area-store">
+        <!-- New idea boxes will appear here  -->
+      </div>
+  </div>
+</div>
+    
+
+<!-- ==== Sections for Best and Completed Ideas ==== -->
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <!-- Best Ideas -->
+    <div class="col-lg-6">
+      <div class="best-ideas border rounded shadow-sm pt-3">
+        <div class="d-flex justify-content-between">
+        <h5 class="font-weight-bold ml-5 ">💎 Best Ideas</h5>
+        <button class="btn btn-sm btn-light toggle-arrow mr-4"  id="toggle-best">
+          <span class="best-arrow-icon mb-0">▼</span>
+        </button>
+        </div>
+        <ul class="list-unstyled area-store store" id="best-ideas-list">
+          <!-- Titles and categories for best ideas here -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Completed Ideas -->
+  <div class="col-lg-6">
+    <div class="completed-ideas border rounded shadow-sm pt-3">
+      <div class="d-flex justify-content-between">
+      <h5 class="font-weight-bold text-center ml-5">✅ Completed Ideas</h5>
+        <button class="btn btn-sm btn-light toggle-arrow mr-4"  id="toggle-completed">
+          <span class="comp-arrow-icon">▼</span>
+        </button>
+      </div>
+      <ul class="list-unstyled area-store store" id="completed-ideas-list">
+        <!-- Titles for completed ideas here -->
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr style="border: 0; height: 0.2px; background-color: gray; margin-top: 50px;">
+<footer style="text-align: center; font-size: 12px; color: gray; margin-top: 50px;">
+  © 2005 Marifa Muhammed | Contact: marifamuhammed746@gmail.com
+</footer>
+
+
+<script src="js/script2.js"></script>
+</body>
+</html>
